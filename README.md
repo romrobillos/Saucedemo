@@ -2,30 +2,20 @@ This repository contains an automated test suite for the SauceDemo website, buil
 
 
 
-Features
-
--Page Factory Implementation 
-
--TestNG Integration 
-
--Automation Scenarios: Test scripts for login functionality, product interactions (add/remove items to/from cart) until checkout.
+## Features</br>
+-Page Factory Implementation</br>
+-TestNG Integration</br>
+-Automation Scenarios: Test scripts for login functionality, product interactions (add/remove items to/from cart) until checkout.</br>
 
 
 
-Key Highlights
+## Key Highlights</br>
+-Page Object Model (POM): Implements the Page Object Model using Page Factory.</br>
+-Assertions: Validates key functionalities using assertions for accurate test results.</br>
+-Maven: manages dependencies.</br>
 
--Page Object Model (POM): Implements the Page Object Model using Page Factory.
-
--Assertions: Validates key functionalities using assertions for accurate test results.
-
--Maven: manages dependencies.
-
-Technologies Used
-
--Java  
-
--Maven  
-
--Selenium WebDriver
-
--TestNG
+## Technologies Used</br>
+-Java</br>
+-Maven</br>
+-Selenium WebDriver</br>
+-TestNG</br>
