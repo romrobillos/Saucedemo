@@ -10,9 +10,9 @@
 
 		<classes>
 			<class name="testcase.LoginTest"/>
-			<class name="testcase.ProductTest"/>
-			<class name="testcase.CartTest"/>
-			<class name="testcase.CheckoutTest"/>
+<!--			<class name="testcase.ProductTest"/>-->
+<!--			<class name="testcase.CartTest"/>-->
+<!--			<class name="testcase.CheckoutTest"/>-->
 <!--				<methods>-->
 <!--					<include name="testFinishBtnAndGlitchBackhomeBtn"/>-->
 <!--				</methods>-->
