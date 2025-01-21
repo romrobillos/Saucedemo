@@ -9,15 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">23,406</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,409</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcase.ProductTest</td><td><a href="#m0">validateProductImages</a></td><td rowspan="2">1736806101492</td><td rowspan="2">1682</td></tr><tr class="failedeven"><td><a href="#m1">validateProductImages</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testcase.ProductTest</td><td><a href="#m2">validateProductImages</a></td><td rowspan="3">1736806117406</td><td rowspan="3">1534</td></tr><tr class="passedeven"><td><a href="#m3">validateProductImages</a></td></tr><tr class="passedeven"><td><a href="#m4">validateProductImages</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcase.ProductTest</td><td><a href="#m0">testGlitchSortLowToHigh</a></td><td rowspan="1">1737497043868</td><td rowspan="1">10557</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcase.ProductTest</td><td><a href="#m1">testGlitchSortLowToHigh</a></td><td rowspan="1">1737497055716</td><td rowspan="1">580</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testcase.ProductTest</td><td><a href="#m2">testGlitchSortLowToHigh</a></td><td rowspan="3">1737497040103</td><td rowspan="3">612</td></tr><tr class="passedeven"><td><a href="#m3">testGlitchSortLowToHigh</a></td></tr><tr class="passedeven"><td><a href="#m4">testGlitchSortLowToHigh</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testcase.ProductTest#validateProductImages</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Backpack Image for visual_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
+<h2>Default test</h2><h3 id="m0">testcase.ProductTest#testGlitchSortLowToHigh</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>performance_glitch_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: 
+Sort took 5.1415313 seconds expecting &lt;=1.0 seconds expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:429)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -45,16 +46,8 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcase.ProductTest#validateProductImages</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>problem_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Backpack Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	BikeLight Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Tshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Jacket Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Onesie Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Redshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
+<h3 id="m1">testcase.ProductTest#testGlitchSortLowToHigh</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>error_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.testng.SkipException: Test skipped due to sorting is broken!
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:424)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -82,8 +75,8 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcase.ProductTest#validateProductImages</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>error_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcase.ProductTest#validateProductImages</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>performance_glitch_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcase.ProductTest#validateProductImages</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcase.ProductTest#testGlitchSortLowToHigh</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>visual_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcase.ProductTest#testGlitchSortLowToHigh</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcase.ProductTest#testGlitchSortLowToHigh</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>problem_user</td><td>secret_sauce</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

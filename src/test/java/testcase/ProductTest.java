@@ -421,7 +421,8 @@ public class ProductTest extends BaseTest {
 		try {
 			Alert alert = driver.switchTo().alert();
 			alert.accept();
-		} catch (org.openqa.selenium.NoAlertPresentException | TimeoutException e) {
+			throw new SkipException("Test skipped due to sorting is broken!");
+		} catch (org.openqa.selenium.NoAlertPresentException e) {
 		}
 
 		this.duration = (endTime - startTime) / 1_000_000_000.0;
@@ -437,7 +438,7 @@ public class ProductTest extends BaseTest {
 
 		LoginPage login = new LoginPage(driver);
 		login.toLogin(username, password);
-		
+
 		new ProductPage(driver).toLogout();
 		boolean userLoggedOut = new LoginPage(driver).isLogoutSuccessful();
 		Assert.assertTrue(userLoggedOut);

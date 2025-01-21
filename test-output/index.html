@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse-1320608618\testng-customsuite.xml</span>
+                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--1929001861\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,15 +104,24 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="validateProductImages(visual_user, secret_sauce)">validateProductImages(visual_user, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="validateProductImages(problem_user, secret_sauce)">validateProductImages(problem_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="testGlitchSortLowToHigh(performance_glitch_user, secret_sauce)">testGlitchSortLowToHigh(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="testGlitchSortLowToHigh(error_user, secret_sauce)">testGlitchSortLowToHigh(error_user, secret_sauce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,17 +132,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="validateProductImages(error_user, secret_sauce)">validateProductImages(error_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="testGlitchSortLowToHigh(visual_user, secret_sauce)">testGlitchSortLowToHigh(visual_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="validateProductImages(performance_glitch_user, secret_sauce)">validateProductImages(performance_glitch_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="testGlitchSortLowToHigh(standard_user, secret_sauce)">testGlitchSortLowToHigh(standard_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="validateProductImages(standard_user, secret_sauce)">validateProductImages(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcase.ProductTest" class="method navigator-link" hash-for-method="testGlitchSortLowToHigh(problem_user, secret_sauce)">testGlitchSortLowToHigh(problem_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -156,15 +165,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateProductImages(visual_user, secret_sauce)">
-                  </a> <!-- validateProductImages(visual_user, secret_sauce) -->
-                  <span class="method-name">validateProductImages</span>
-                  <span class="parameters">(visual_user, secret_sauce)</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Backpack Image for visual_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
+                  <a name="testGlitchSortLowToHigh(performance_glitch_user, secret_sauce)">
+                  </a> <!-- testGlitchSortLowToHigh(performance_glitch_user, secret_sauce) -->
+                  <span class="method-name">testGlitchSortLowToHigh</span>
+                  <span class="parameters">(performance_glitch_user, secret_sauce)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Sort took 5.1415313 seconds expecting &lt;=1.0 seconds expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:429)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -194,59 +204,59 @@
 
 </div> <!-- stack-trace -->
                   <em>
-(Verify All product images)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateProductImages(problem_user, secret_sauce)">
-                  </a> <!-- validateProductImages(problem_user, secret_sauce) -->
-                  <span class="method-name">validateProductImages</span>
-                  <span class="parameters">(problem_user, secret_sauce)</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Backpack Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	BikeLight Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Tshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Jacket Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Onesie Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Redshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Verify All product images)                  </em>
+(Verify Glitch Low to High Sort)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcase.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGlitchSortLowToHigh(error_user, secret_sauce)">
+                  </a> <!-- testGlitchSortLowToHigh(error_user, secret_sauce) -->
+                  <span class="method-name">testGlitchSortLowToHigh</span>
+                  <span class="parameters">(error_user, secret_sauce)</span>
+                  <div class="stack-trace">org.testng.SkipException: Test skipped due to sorting is broken!
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:424)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Glitch Low to High Sort)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -255,32 +265,32 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateProductImages(error_user, secret_sauce)">
-                  </a> <!-- validateProductImages(error_user, secret_sauce) -->
-                  <span class="method-name">validateProductImages</span>
-                  <span class="parameters">(error_user, secret_sauce)</span>
+                  <a name="testGlitchSortLowToHigh(visual_user, secret_sauce)">
+                  </a> <!-- testGlitchSortLowToHigh(visual_user, secret_sauce) -->
+                  <span class="method-name">testGlitchSortLowToHigh</span>
+                  <span class="parameters">(visual_user, secret_sauce)</span>
                   <em>
-(Verify All product images)                  </em>
+(Verify Glitch Low to High Sort)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateProductImages(performance_glitch_user, secret_sauce)">
-                  </a> <!-- validateProductImages(performance_glitch_user, secret_sauce) -->
-                  <span class="method-name">validateProductImages</span>
-                  <span class="parameters">(performance_glitch_user, secret_sauce)</span>
-                  <em>
-(Verify All product images)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateProductImages(standard_user, secret_sauce)">
-                  </a> <!-- validateProductImages(standard_user, secret_sauce) -->
-                  <span class="method-name">validateProductImages</span>
+                  <a name="testGlitchSortLowToHigh(standard_user, secret_sauce)">
+                  </a> <!-- testGlitchSortLowToHigh(standard_user, secret_sauce) -->
+                  <span class="method-name">testGlitchSortLowToHigh</span>
                   <span class="parameters">(standard_user, secret_sauce)</span>
                   <em>
-(Verify All product images)                  </em>
+(Verify Glitch Low to High Sort)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGlitchSortLowToHigh(problem_user, secret_sauce)">
+                  </a> <!-- testGlitchSortLowToHigh(problem_user, secret_sauce) -->
+                  <span class="method-name">testGlitchSortLowToHigh</span>
+                  <span class="parameters">(problem_user, secret_sauce)</span>
+                  <em>
+(Verify Glitch Low to High Sort)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -288,7 +298,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse-1320608618\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--1929001861\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -299,7 +309,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testcase.ProductTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;validateProductImages&quot;/&gt;
+          &lt;include name=&quot;testGlitchSortLowToHigh&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testcase.ProductTest --&gt;
     &lt;/classes&gt;
@@ -343,30 +353,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateProductImages')
+data.setCell(0, 1, 'testGlitchSortLowToHigh')
 data.setCell(0, 2, 'testcase.ProductTest')
-data.setCell(0, 3, 6621);
+data.setCell(0, 3, 10557);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateProductImages')
+data.setCell(1, 1, 'testGlitchSortLowToHigh')
 data.setCell(1, 2, 'testcase.ProductTest')
-data.setCell(1, 3, 2039);
+data.setCell(1, 3, 612);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateProductImages')
+data.setCell(2, 1, 'testGlitchSortLowToHigh')
 data.setCell(2, 2, 'testcase.ProductTest')
-data.setCell(2, 3, 1682);
+data.setCell(2, 3, 580);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateProductImages')
+data.setCell(3, 1, 'testGlitchSortLowToHigh')
 data.setCell(3, 2, 'testcase.ProductTest')
-data.setCell(3, 3, 1582);
+data.setCell(3, 3, 575);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateProductImages')
+data.setCell(4, 1, 'testGlitchSortLowToHigh')
 data.setCell(4, 2, 'testcase.ProductTest')
-data.setCell(4, 3, 1534);
+data.setCell(4, 3, 535);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -389,6 +399,8 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testGlitchSortZtoA</span>
                 <br/>
+                <span class="ignored-method-name">validateProductImages</span>
+                <br/>
                 <span class="ignored-method-name">testAddRemoveButtons</span>
                 <br/>
                 <span class="ignored-method-name">testCartBadge</span>
@@ -398,8 +410,6 @@ return data;
                 <span class="ignored-method-name">testSortHighToLow</span>
                 <br/>
                 <span class="ignored-method-name">testCartCoordinatesForVisualUserOnly</span>
-                <br/>
-                <span class="ignored-method-name">testGlitchSortLowToHigh</span>
                 <br/>
                 <span class="ignored-method-name">testSortAtoZ</span>
                 <br/>
@@ -425,64 +435,62 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateProductImages(standard_user, secret_sauce)</span>
-                <span class="method-start">2412 ms</span>
+                <span class="method-name">testGlitchSortLowToHigh(standard_user, secret_sauce)</span>
+                <span class="method-start">2275 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4001 ms</span>
+                <span class="method-start">2852 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4228 ms</span>
+                <span class="method-start">2989 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGlitchSortLowToHigh(visual_user, secret_sauce)</span>
+                <span class="method-start">4016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">4629 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGlitchSortLowToHigh(problem_user, secret_sauce)</span>
+                <span class="method-start">5938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6595 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validateProductImages(visual_user, secret_sauce)</span>
-                <span class="method-start">5680 ms</span>
+                <span class="method-name">testGlitchSortLowToHigh(performance_glitch_user, secret_sauce)</span>
+                <span class="method-start">7781 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7366 ms</span>
+                <span class="method-start">18338 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7600 ms</span>
+                <span class="method-start">18483 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateProductImages(problem_user, secret_sauce)</span>
-                <span class="method-start">9193 ms</span>
+                <span class="method-name">testGlitchSortLowToHigh(error_user, secret_sauce)</span>
+                <span class="method-start">19629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11237 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11493 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateProductImages(performance_glitch_user, secret_sauce)</span>
-                <span class="method-start">13194 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">19819 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">20069 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateProductImages(error_user, secret_sauce)</span>
-                <span class="method-start">21594 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">23132 ms</span>
+                <span class="method-start">20210 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

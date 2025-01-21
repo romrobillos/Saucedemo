@@ -6,8 +6,8 @@
       <class name="testcase.ProductTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validateProductImages" invocation-numbers="1 2"/>
           <include name="setUp"/>
+          <include name="testGlitchSortLowToHigh" invocation-numbers="3 4"/>
         </methods>
       </class> <!-- testcase.ProductTest -->
     </classes>

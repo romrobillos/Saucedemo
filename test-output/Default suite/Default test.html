@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 14 06:08:15 GMT+08:00 2025</td>
+<td>Started on:</td><td>Wed Jan 22 06:03:56 GMT+08:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23406 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20409 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.ProductTest.validateProductImages()'><b>validateProductImages</b><br>Test class: testcase.ProductTest<br>Test method: Verify All product images<br>Parameters: visual_user, secret_sauce</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Backpack Image for visual_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
+<td title='testcase.ProductTest.testGlitchSortLowToHigh()'><b>testGlitchSortLowToHigh</b><br>Test class: testcase.ProductTest<br>Test method: Verify Glitch Low to High Sort<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td><div><pre>java.lang.AssertionError: 
+Sort took 5.1415313 seconds expecting &lt;=1.0 seconds expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:429)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -107,90 +108,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace941403433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace941403433'><pre>java.lang.AssertionError: The following asserts failed:
-	Backpack Image for visual_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>testcase.ProductTest@3270d194</td></tr>
-<tr>
-<td title='testcase.ProductTest.validateProductImages()'><b>validateProductImages</b><br>Test class: testcase.ProductTest<br>Test method: Verify All product images<br>Parameters: problem_user, secret_sauce</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Backpack Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	BikeLight Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Tshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Jacket Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Onesie Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Redshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1559788797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1559788797'><pre>java.lang.AssertionError: The following asserts failed:
-	Backpack Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	BikeLight Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Tshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Jacket Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Onesie Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-	Redshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testcase.ProductTest.validateProductImages(ProductTest.java:64)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1893736577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1893736577'><pre>java.lang.AssertionError: 
+Sort took 5.1415313 seconds expecting &lt;=1.0 seconds expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:429)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -218,7 +142,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>2</td>
+<td>10</td>
 <td>testcase.ProductTest@3270d194</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -229,19 +153,89 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcase.ProductTest.validateProductImages()'><b>validateProductImages</b><br>Test class: testcase.ProductTest<br>Test method: Verify All product images<br>Parameters: error_user, secret_sauce</td>
+<td title='testcase.ProductTest.testGlitchSortLowToHigh()'><b>testGlitchSortLowToHigh</b><br>Test class: testcase.ProductTest<br>Test method: Verify Glitch Low to High Sort<br>Parameters: visual_user, secret_sauce</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>testcase.ProductTest@3270d194</td></tr>
 <tr>
-<td title='testcase.ProductTest.validateProductImages()'><b>validateProductImages</b><br>Test class: testcase.ProductTest<br>Test method: Verify All product images<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td title='testcase.ProductTest.testGlitchSortLowToHigh()'><b>testGlitchSortLowToHigh</b><br>Test class: testcase.ProductTest<br>Test method: Verify Glitch Low to High Sort<br>Parameters: standard_user, secret_sauce</td>
 <td></td>
-<td>6</td>
+<td>0</td>
 <td>testcase.ProductTest@3270d194</td></tr>
 <tr>
-<td title='testcase.ProductTest.validateProductImages()'><b>validateProductImages</b><br>Test class: testcase.ProductTest<br>Test method: Verify All product images<br>Parameters: standard_user, secret_sauce</td>
+<td title='testcase.ProductTest.testGlitchSortLowToHigh()'><b>testGlitchSortLowToHigh</b><br>Test class: testcase.ProductTest<br>Test method: Verify Glitch Low to High Sort<br>Parameters: problem_user, secret_sauce</td>
 <td></td>
-<td>1</td>
+<td>0</td>
+<td>testcase.ProductTest@3270d194</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.ProductTest.testGlitchSortLowToHigh()'><b>testGlitchSortLowToHigh</b><br>Test class: testcase.ProductTest<br>Test method: Verify Glitch Low to High Sort<br>Parameters: error_user, secret_sauce</td>
+<td><div><pre>org.testng.SkipException: Test skipped due to sorting is broken!
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:424)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1033425208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1033425208'><pre>org.testng.SkipException: Test skipped due to sorting is broken!
+	at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:424)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
 <td>testcase.ProductTest@3270d194</td></tr>
 </table><p>
 </body>

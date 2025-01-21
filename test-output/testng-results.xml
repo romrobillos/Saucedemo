@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="16" passed="3" failed="2" skipped="0">
+<testng-results ignored="11" total="16" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-14T06:08:15 GMT+08:00" name="Default suite" finished-at="2025-01-14T06:08:39 GMT+08:00" duration-ms="23406">
+  <suite started-at="2025-01-22T06:03:56 GMT+08:00" name="Default suite" finished-at="2025-01-22T06:04:16 GMT+08:00" duration-ms="20409">
     <groups>
     </groups>
-    <test started-at="2025-01-14T06:08:15 GMT+08:00" name="Default test" finished-at="2025-01-14T06:08:39 GMT+08:00" duration-ms="23406">
+    <test started-at="2025-01-22T06:03:56 GMT+08:00" name="Default test" finished-at="2025-01-22T06:04:16 GMT+08:00" duration-ms="20409">
       <class name="testcase.ProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:15 GMT+08:00" name="setUp" finished-at="2025-01-14T06:08:18 GMT+08:00" duration-ms="2410" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:03:56 GMT+08:00" name="setUp" finished-at="2025-01-22T06:03:58 GMT+08:00" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateProductImages(java.lang.String,java.lang.String)[pri:8, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:18 GMT+08:00" name="validateProductImages" description="Verify All product images" data-provider="validCredentials" finished-at="2025-01-14T06:08:19 GMT+08:00" duration-ms="1582" status="PASS">
+        <test-method signature="testGlitchSortLowToHigh(java.lang.String,java.lang.String)[pri:12, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:03:58 GMT+08:00" name="testGlitchSortLowToHigh" description="Verify Glitch Low to High Sort" data-provider="validCredentials" finished-at="2025-01-22T06:03:58 GMT+08:00" duration-ms="575" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,16 +26,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateProductImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:19 GMT+08:00" name="tearDown" finished-at="2025-01-14T06:08:20 GMT+08:00" duration-ms="227" status="PASS">
+        </test-method> <!-- testGlitchSortLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:03:58 GMT+08:00" name="tearDown" finished-at="2025-01-22T06:03:59 GMT+08:00" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:20 GMT+08:00" name="setUp" finished-at="2025-01-14T06:08:21 GMT+08:00" duration-ms="1452" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:03:59 GMT+08:00" name="setUp" finished-at="2025-01-22T06:04:00 GMT+08:00" duration-ms="1025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateProductImages(java.lang.String,java.lang.String)[pri:8, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:21 GMT+08:00" name="validateProductImages" description="Verify All product images" data-provider="validCredentials" finished-at="2025-01-14T06:08:23 GMT+08:00" duration-ms="1682" status="FAIL">
+        <test-method signature="testGlitchSortLowToHigh(java.lang.String,java.lang.String)[pri:12, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:00 GMT+08:00" name="testGlitchSortLowToHigh" description="Verify Glitch Low to High Sort" data-provider="validCredentials" finished-at="2025-01-22T06:04:00 GMT+08:00" duration-ms="612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,58 +48,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Backpack Image for visual_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Backpack Image for visual_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at testcase.ProductTest.validateProductImages(ProductTest.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateProductImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:23 GMT+08:00" name="tearDown" finished-at="2025-01-14T06:08:23 GMT+08:00" duration-ms="234" status="PASS">
+        </test-method> <!-- testGlitchSortLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:00 GMT+08:00" name="tearDown" finished-at="2025-01-22T06:04:00 GMT+08:00" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:23 GMT+08:00" name="setUp" finished-at="2025-01-14T06:08:25 GMT+08:00" duration-ms="1593" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:00 GMT+08:00" name="setUp" finished-at="2025-01-22T06:04:02 GMT+08:00" duration-ms="1184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateProductImages(java.lang.String,java.lang.String)[pri:8, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:25 GMT+08:00" name="validateProductImages" description="Verify All product images" data-provider="validCredentials" finished-at="2025-01-14T06:08:27 GMT+08:00" duration-ms="2039" status="FAIL">
+        <test-method signature="testGlitchSortLowToHigh(java.lang.String,java.lang.String)[pri:12, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:02 GMT+08:00" name="testGlitchSortLowToHigh" description="Verify Glitch Low to High Sort" data-provider="validCredentials" finished-at="2025-01-22T06:04:02 GMT+08:00" duration-ms="535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,27 +72,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGlitchSortLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:02 GMT+08:00" name="tearDown" finished-at="2025-01-22T06:04:02 GMT+08:00" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:02 GMT+08:00" name="setUp" finished-at="2025-01-22T06:04:03 GMT+08:00" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGlitchSortLowToHigh(java.lang.String,java.lang.String)[pri:12, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:03 GMT+08:00" name="testGlitchSortLowToHigh" description="Verify Glitch Low to High Sort" data-provider="validCredentials" finished-at="2025-01-22T06:04:14 GMT+08:00" duration-ms="10557" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-Backpack Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-BikeLight Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Tshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Jacket Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Onesie Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Redshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]]]>
+              <![CDATA[
+Sort took 5.1415313 seconds expecting <=1.0 seconds expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Backpack Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-BikeLight Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Tshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Jacket Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Onesie Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-onesie-1200x1500.2ec615b2.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg],
-Redshirt Image for problem_user FAILED! expected [https://www.saucedemo.com/static/media/red-tatt-1200x1500.30dadef4.jpg] but found [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at testcase.ProductTest.validateProductImages(ProductTest.java:64)
+              <![CDATA[java.lang.AssertionError: 
+Sort took 5.1415313 seconds expecting <=1.0 seconds expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:429)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -164,40 +139,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateProductImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:27 GMT+08:00" name="tearDown" finished-at="2025-01-14T06:08:27 GMT+08:00" duration-ms="256" status="PASS">
+        </test-method> <!-- testGlitchSortLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:14 GMT+08:00" name="tearDown" finished-at="2025-01-22T06:04:14 GMT+08:00" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:27 GMT+08:00" name="setUp" finished-at="2025-01-14T06:08:29 GMT+08:00" duration-ms="1701" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:14 GMT+08:00" name="setUp" finished-at="2025-01-22T06:04:15 GMT+08:00" duration-ms="1146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateProductImages(java.lang.String,java.lang.String)[pri:8, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:29 GMT+08:00" name="validateProductImages" description="Verify All product images" data-provider="validCredentials" finished-at="2025-01-14T06:08:35 GMT+08:00" duration-ms="6621" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:35 GMT+08:00" name="tearDown" finished-at="2025-01-14T06:08:35 GMT+08:00" duration-ms="248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:35 GMT+08:00" name="setUp" finished-at="2025-01-14T06:08:37 GMT+08:00" duration-ms="1525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateProductImages(java.lang.String,java.lang.String)[pri:8, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:37 GMT+08:00" name="validateProductImages" description="Verify All product images" data-provider="validCredentials" finished-at="2025-01-14T06:08:38 GMT+08:00" duration-ms="1534" status="PASS">
+        <test-method signature="testGlitchSortLowToHigh(java.lang.String,java.lang.String)[pri:12, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:15 GMT+08:00" name="testGlitchSortLowToHigh" description="Verify Glitch Low to High Sort" data-provider="validCredentials" finished-at="2025-01-22T06:04:16 GMT+08:00" duration-ms="580" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -210,10 +161,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test skipped due to sorting is broken!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test skipped due to sorting is broken!
+at testcase.ProductTest.testGlitchSortLowToHigh(ProductTest.java:424)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateProductImages -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-14T06:08:38 GMT+08:00" name="tearDown" finished-at="2025-01-14T06:08:39 GMT+08:00" duration-ms="226" status="PASS">
+        </test-method> <!-- testGlitchSortLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcase.ProductTest@3270d194]" started-at="2025-01-22T06:04:16 GMT+08:00" name="tearDown" finished-at="2025-01-22T06:04:16 GMT+08:00" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
