@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.ProductTest">
+      <class name="testcase.LoginTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testGlitchSortLowToHigh" invocation-numbers="3 4"/>
+          <include name="testResponseTime" invocation-numbers="3"/>
         </methods>
-      </class> <!-- testcase.ProductTest -->
+      </class> <!-- testcase.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.LoginPage;
+import base.ProductPage;
 
 public class LoginTest extends BaseTest {
 
@@ -11,17 +12,25 @@ public class LoginTest extends BaseTest {
 
 	@Test(priority = 1, dataProvider = "validCredentials", dataProviderClass = BaseTest.class, description = "Verify login")
 	public void testToLogin(String username, String password) {
-		LoginPage login = new LoginPage(driver);
-		this.startTime = System.nanoTime();
-		login.toLogin(username, password);
-		this.endTime = System.nanoTime();
+		LoginPage loginPage = new LoginPage(driver);
+		
+		loginPage.toLogin(username, password);
+		
+		
+		ProductPage productPage = new ProductPage(driver);
+		
+		boolean isLoginSuccesful = productPage.isProductPageDisplayed();
+		Assert.assertTrue(isLoginSuccesful);
 	}
 
 	// Login Response Time Test
 
 	@Test(priority = 4, dataProvider = "validCredentials", dataProviderClass = BaseTest.class, description = "Verify Login response time")
 	public void testResponseTime(String username, String password) {
-		testToLogin(username, password);
+		LoginPage loginPage = new LoginPage(driver);
+		this.startTime = System.nanoTime();
+		loginPage.toLogin(username, password);
+		this.endTime = System.nanoTime();
 		this.duration = (endTime - startTime) / 1_000_000_000.0;
 		Assert.assertTrue(this.duration <= 2.0, "\nLogin took " + this.duration + " seconds expecting <=2.0 seconds");
 		System.out.println(
@@ -34,8 +43,8 @@ public class LoginTest extends BaseTest {
 	public void testLockedOutErrorMsg() {
 		this.username = "locked_out_user";
 		this.password = "secret_sauce";
-		testToLogin(username, password);
 		LoginPage loginPage = new LoginPage(driver);
+		loginPage.toLogin(username, password);
 		this.errorMessage = loginPage.getErrorMessage();
 		Assert.assertTrue(this.errorMessage.contains("Epic sadface: Sorry, this user has been locked out"));
 		System.out.println(
@@ -48,8 +57,8 @@ public class LoginTest extends BaseTest {
 	public void testInvalidLoginErrorMsg() {
 		this.username = "Invalid_user";
 		this.password = "Invalid_pass";
-		testToLogin(username, password);
 		LoginPage loginPage = new LoginPage(driver);
+		loginPage.toLogin(username, password);
 		this.errorMessage = loginPage.getErrorMessage();
 		Assert.assertTrue(this.errorMessage
 				.contains("Epic sadface: Username and password do not match any user in this service"));
